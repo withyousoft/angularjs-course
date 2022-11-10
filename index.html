@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" ng-app="myFirstApp">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="app.js"></script>
-    <style>
-      body {font-size: 1.5em;}
-    </style>
-    <title>Lecture 02 - Single Page Web Application with AngularJS</title>
+    <title>Lecture 03 - My first AngularJS</title>
   </head>
   <body>
-    <h1>Low Cohesion and Tight Coupling</h1>
-    <div id="nameCalculator">
-      <div>
-        Your name: <input type="text" id="name" >
-      </div>
-      <div id="output"></div>
+    <h1>My First AngularJS APP</h1>
+    <div ng-controller="MyFirstController">
+      <input type="text" ng-model="name" />
+      <h2>{{name}}</h2>
     </div>
   </body>
 </html>
